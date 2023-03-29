@@ -1,3 +1,6 @@
+29-03-2023 	 15:44:55	GET	/login	undefined
+29-03-2023 	 15:38:29	GET	/api/user	undefined
+29-03-2023 	 15:38:20	GET	/user	undefined
 20-03-2023 	 17:23:51	GET	/employee/admin-products	http://localhost:3000
 20-03-2023 	 17:23:51	OPTIONS	/employee/admin-products	http://localhost:3000
 20-03-2023 	 17:21:43	GET	/employee/admin-products	http://localhost:3000

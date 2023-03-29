@@ -13,7 +13,7 @@ const { errorHandler } = require("./middleware/error")
 connectDB()
 const app = express()
 app.use(express.json())
-app.use(express.static(path.join(__dirname, "build")))
+app.use(express.static(path.join(__dirname, "public/build")))
 app.use(express.static(path.join(__dirname, "public")))
 
 // app.use(express.static("public"))
@@ -46,7 +46,7 @@ app.use("/api/employee", require("./routes/employeeRoute"))
 app.use("/api/auth", require("./routes/authRoute"))
 app.use("/api/products", require("./routes/productRoute"))
 app.use("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "/app/build/index.html"))
+    res.sendFile(path.join(__dirname, "public/build/index.html"))
     // res.status(400).json({
     //     message: "404:resourse you are lokking for is not available"
     // })
